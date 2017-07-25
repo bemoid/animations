@@ -1,0 +1,26 @@
+{
+  "name": "@bemoid/animations",
+  "version": "1.0.0",
+  "description": "A drop-in package which gives a little life to the components of Bemoid framework.",
+  "main": "scss/animations.scss",
+  "scripts": {
+    "compile": "node-sass scss/animations.scss > css/animations.css",
+    "minify": "cssnano < css/animations.css > css/animations.min.css",
+    "transform": "postcss css/animations.css -o css/animations.css",
+    "build": "npm run compile && npm run transform",
+    "build:production": "npm run build && npm run minify",
+    "watch": "npm run compile -- --watch"
+  },
+  "keywords": [
+    "animations",
+    "transitions"
+  ],
+  "author": "Jędrzej Chałubek",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "cssnano-cli": "^1.0.5",
+    "node-sass": "^4.5.2",
+    "postcss-cli": "^3.1.1"
+  }
+}
