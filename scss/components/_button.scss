@@ -1,0 +1,11 @@
+/** @define button */
+
+.button {
+  $this: &;
+
+  transition: $button-transition;
+
+  &__cover {
+    transition: $button-cover-transition;
+  }
+}
