@@ -1,0 +1,15 @@
+/** @define radio */
+
+.radio {
+  $this: &;
+
+  &__label {
+    &:before {
+        transition: $radio-outer-transition;
+    }
+
+    &:after {
+        transition: $radio-inner-transition;
+    }
+  }
+}
