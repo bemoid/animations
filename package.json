@@ -1,7 +1,7 @@
 {
   "name": "@bemoid/animations",
   "version": "1.0.0",
-  "description": "A drop-in package which gives a little life to the components of Bemoid framework.",
+  "description": "A drop-in package which brings a little life to the components of Bemoid framework.",
   "main": "scss/animations.scss",
   "scripts": {
     "compile": "node-sass scss/animations.scss > css/animations.css",

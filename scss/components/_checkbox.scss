@@ -1,0 +1,15 @@
+/** @define checkbox */
+
+.checkbox {
+  $this: &;
+
+  &__label {
+    &:before {
+        transition: $checkbox-transition;
+    }
+
+    &:after {
+        transition: $checkbox-mark-transition;
+    }
+  }
+}
