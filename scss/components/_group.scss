@@ -1,0 +1,16 @@
+/** @define group */
+
+.group {
+  $this: &;
+
+  &__item {
+    transition: #{$group-item-transition}, z-index 0ms step-end;
+
+    &:hover,
+    &:focus,
+    & > *:hover,
+    & > *:focus, {
+      transition: #{$group-item-transition}, z-index 0.2s step-start;
+    }
+  }
+}
