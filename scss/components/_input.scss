@@ -1,0 +1,7 @@
+/** @define input */
+
+.input {
+  $this: &;
+
+  transition: $input-transition;
+}
