@@ -1,0 +1,7 @@
+/** @define tag */
+
+.tag {
+  $this: &;
+
+  transition: $tag-transition;
+}
